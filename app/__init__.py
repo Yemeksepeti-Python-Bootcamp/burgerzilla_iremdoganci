@@ -35,3 +35,4 @@ def register_extensions(app):
     jwt.init_app(app)
     bcrypt.init_app(app)
     cors.init_app(app)
+

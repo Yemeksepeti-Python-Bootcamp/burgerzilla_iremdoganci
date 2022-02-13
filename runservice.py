@@ -5,10 +5,10 @@ if os.path.exists(dotenv_path):
     load_dotenv(dotenv_path)
 
 from app.models.order import Order
-from app.models.product import Product
-from app.models.restaurant import Restaurant
-from app.models.menu import Menu
-from app.models.customer import Customer
+from app.models.product import *
+from app.models.restaurant import *
+from app.models.menu import *
+from app.models.customer import *
 
 import click
 from flask_migrate import Migrate
@@ -17,6 +17,11 @@ from flask_migrate import Migrate
 from app import create_app, db
 app = create_app(os.getenv('FLASK_CONFIG') or 'default') #env nin içinden configle ilgili olanı al ya da default olarak kullan
 migrate = Migrate(app, db)
+
+insert_customer()
+insert_restaurant()
+insert_menu()
+insert_product()
 
 
 @app.cli.command()

@@ -14,6 +14,7 @@ class Restaurant(db.Model):
     order = db.relationship('Order', backref='order')
     menu = db.relationship('Menu', backref='menu')
 
+
     def __init__(self, **kwargs):
         super(Restaurant, self).__init__(**kwargs)
 
@@ -30,3 +31,19 @@ class Restaurant(db.Model):
 
     def __repr__(self):
         return f"<Restaurant {self.name}>"
+
+
+def insert_restaurant():
+    """default restaurant data"""
+    restaurant = Restaurant(email="omerk@restoran.nett",
+                        name="Dumbili Burger",
+                        password="12345678",
+                        address="Ata Mahallesi No:1 Ümraniye/İstanbul")
+
+    restaurant2 = Restaurant(email="tuncd@restoran.nett",
+                        name="Dublemumble",
+                        password="12345678",
+                        address="Cennet Mahallesi No:1 Ankara")
+    db.session.add(restaurant)
+    db.session.add(restaurant2)
+    db.session.commit()

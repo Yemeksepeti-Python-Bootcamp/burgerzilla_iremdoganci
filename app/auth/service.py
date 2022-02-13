@@ -49,7 +49,6 @@ class AuthService:
         except Exception as e:
             current_app.logger.error(e)
             return internal_err_resp()
-        
 
     @staticmethod
     def register(data):
@@ -58,12 +57,11 @@ class AuthService:
         password = data.get('password')
         address = data.get('address')
         user_type = data.get('user_type')
-    
 
         if Customer.query.filter_by(email=email).first():
-            return err_resp('This email address is used',"email_409",409)
+            return err_resp('This email address is used', "email_409",409)
         elif Restaurant.query.filter_by(email=email).first():
-            return err_resp('This email address is used',"email_409",409)
+            return err_resp('This email address is used', "email_409",409)
         try:
             if user_type == 'customer':
                 customer = Customer(email=email, name=name, password=password,address=address)

@@ -1,4 +1,3 @@
-from turtle import st
 from flask import current_app
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from app.utils import err_resp,internal_err_resp, message

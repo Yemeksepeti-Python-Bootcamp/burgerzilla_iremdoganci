@@ -10,10 +10,9 @@ from app.models.restaurant import Restaurant
 from app.models.menu import Menu
 from app.models.customer import Customer
 
-
-
 import click
 from flask_migrate import Migrate
+
 # configte dev database ve prod database ve test database ayrı. flask congiften aldıüı dbyi değiştireceği için migrate burada
 from app import create_app, db
 app = create_app(os.getenv('FLASK_CONFIG') or 'default') #env nin içinden configle ilgili olanı al ya da default olarak kullan

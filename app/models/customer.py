@@ -17,6 +17,21 @@ class Customer(db.Model):
     def __init__(self, **kwargs):
         super(Customer, self).__init__(**kwargs)
 
+    def insert_customer():
+        """default customer data"""
+        customer = Customer(email="ugurozy@musteri.nett",
+                            name="Ugur Ozyali",
+                            password="12345678",
+                            address="Nilüfer Mahallesi No:1 Beşiktaş/İstanbul")
+
+        customer2 = Customer(email="ezelozy@musteri.nett",
+                            name="Ezel Ozluyali",
+                            password="12345678",
+                            address="Anıttepe Mahallesi No:1 Ankara")
+        db.session.add(customer)
+        db.session.add(customer2)
+        db.session.commit()
+
     @property
     def password(self):
         raise AttributeError("Password is not a readable attribute")
@@ -31,17 +46,4 @@ class Customer(db.Model):
     def __repr__(self):
         return f"<Customer {self.name}>"
 
-def insert_customer():
-    """default customer data"""
-    customer = Customer(email="ugurozy@musteri.nett",
-                        name="Ugur Ozyali",
-                        password="12345678",
-                        address="Nilüfer Mahallesi No:1 Beşiktaş/İstanbul")
 
-    customer2 = Customer(email="ezelozy@musteri.nett",
-                        name="Ezel Ozluyali",
-                        password="12345678",
-                        address="Anıttepe Mahallesi No:1 Ankara")
-    db.session.add(customer)
-    db.session.add(customer2)
-    db.session.commit()

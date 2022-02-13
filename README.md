@@ -136,4 +136,4 @@ yapmayı sağlayan bir REST-API mikro servisidir.
 
 
 ## Veri Tabanı ERD
- --add image!!!!!!
+ ! (https://github.com/iremdgnc/Yemeksepeti_Python_Bootcamp_Bitirme_Projesi/blob/main/burgerzilla_erd.png)

@@ -11,8 +11,8 @@ yapmayı sağlayan bir REST-API mikro servisidir.
 
 ## Kurulum
 * Bilgisayarınızda Docker Desktop kurulu olmalıdır.
-* `git clone ...`
-* `cd ...`
+* `git clone https://github.com/iremdgnc/Yemeksepeti_Python_Bootcamp_Bitirme_Projesi.git`
+* `cd Yemeksepeti_Python_Bootcamp_Bitirme_Projesi`
 * `docker build -t burgerzilla:latest .`
 * `docker compose up --build web`
 

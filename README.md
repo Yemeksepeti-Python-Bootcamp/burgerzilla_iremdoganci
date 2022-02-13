@@ -9,12 +9,22 @@ yapmayı sağlayan bir REST-API mikro servisidir.
 * Restoran; siparişlerini listeleyebilir, siparişin detayını görüntüleyebilir, siparişi iptal edebilir, siparişin durumu ile ilgili aksiyon alabilir, menü oluşturabilir, menüye ürün ekleyebilir, menüdeki ürünleri listeleyebilir, menüden ürün silebilir, menüdeki ürünleri güncelleyebilir ve menüden ürün silebilir.
 * JWT (JSON Web Token) kullanıldığı için bir müşteri başka bir müşterinin veya restaurantın bilgilerine erişemez ve müdahale edemez, aynı şekilde bir restaurantta başka bir restaurantın veya müşterinin bilgilerine erişemez ve müdahale edemez. Böylece güvenlik ihlali yaşanmaz.
 
-## Kurulum
-* Bilgisayarınızda Docker Desktop kurulu olmalıdır.
-* `git clone https://github.com/iremdgnc/Yemeksepeti_Python_Bootcamp_Bitirme_Projesi.git`
-* `cd Yemeksepeti_Python_Bootcamp_Bitirme_Projesi`
+## Kurulum ve Çalıştırma
+
+### Bilgisayarda Çalıştırmak İçin
+* `git clone https://github.com/Yemeksepeti-Python-Bootcamp/burgerzilla_iremdoganci.git`
+* `cd burgerzilla_iremdoganci`
+* `python -m venv env`
+* `pip install -r requirements.txt`
+* `flask defaultdata`
+* `flask run`
+
+### Dockerda Çalıştırmak İçin
+* `git clone https://github.com/Yemeksepeti-Python-Bootcamp/burgerzilla_iremdoganci.git`
+* `cd burgerzilla_iremdoganci`
 * `docker build -t burgerzilla:latest .`
 * `docker compose up --build web`
+
 
 ## Proje Yapısı
     📦app

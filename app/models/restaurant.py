@@ -33,17 +33,17 @@ class Restaurant(db.Model):
         return f"<Restaurant {self.name}>"
 
 
-def insert_restaurant():
-    """default restaurant data"""
-    restaurant = Restaurant(email="omerk@restoran.nett",
-                        name="Dumbili Burger",
-                        password="12345678",
-                        address="Ata Mahallesi No:1 Ümraniye/İstanbul")
+    def insert_restaurant():
+        """default restaurant data"""
+        restaurant = Restaurant(email="omerk@restoran.nett",
+                            name="Dumbili Burger",
+                            password="12345678",
+                            address="Ata Mahallesi No:1 Ümraniye/İstanbul")
 
-    restaurant2 = Restaurant(email="tuncd@restoran.nett",
-                        name="Dublemumble",
-                        password="12345678",
-                        address="Cennet Mahallesi No:1 Ankara")
-    db.session.add(restaurant)
-    db.session.add(restaurant2)
-    db.session.commit()
+        restaurant2 = Restaurant(email="tuncd@restoran.nett",
+                            name="Dublemumble",
+                            password="12345678",
+                            address="Cennet Mahallesi No:1 Ankara")
+        db.session.add(restaurant)
+        db.session.add(restaurant2)
+        db.session.commit()

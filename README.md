@@ -136,4 +136,4 @@ yapmayı sağlayan bir REST-API mikro servisidir.
 
 
 ## Veri Tabanı ERD
- ![Image description](burgerzilla_erd.png)
+ ![Image description](databaseerd.png)

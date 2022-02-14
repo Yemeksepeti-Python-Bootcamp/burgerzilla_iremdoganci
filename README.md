@@ -7,7 +7,7 @@ yapmayı sağlayan bir REST-API mikro servisidir.
 ## Proje Bilgileri
 * Müşteri; sipariş oluşturabilir, siparişin detayını görüntüleyebilir, siparişini güncelleyebilir, siparişlerini listeleyebilir ve siparişini iptal edebilir.
 * Restoran; siparişlerini listeleyebilir, siparişin detayını görüntüleyebilir, siparişi iptal edebilir, siparişin durumu ile ilgili aksiyon alabilir, menü oluşturabilir, menüye ürün ekleyebilir, menüdeki ürünleri listeleyebilir, menüden ürün silebilir, menüdeki ürünleri güncelleyebilir ve menüden ürün silebilir.
-* JWT (JSON Web Token) kullanıldığı için bir müşteri başka bir müşterinin veya restaurantın bilgilerine erişemez ve müdahale edemez, aynı şekilde bir restaurantta başka bir restaurantın veya müşterinin bilgilerine erişemez ve müdahale edemez. Böylece güvenlik ihlali yaşanmaz.
+* JWT (JSON Web Token) kullanıldığı için müşteri giriş yaptığında oluşturulan token ile doğrulama işlemi yapmadan diğer işlemlerine devam edemiyor. JWT ile ,fonksiyonlarda bir kontrol işlemi yapıldığı için bir müşteri başka bir müşterinin veya restaurantın bilgilerine erişemez ve müdahale edemez, aynı şekilde bir restaurantta başka bir restaurantın veya müşterinin bilgilerine erişemez ve müdahale edemez. Böylece güvenlik ihlali yaşanmaz.
 
 ## Kurulum ve Çalıştırma
 

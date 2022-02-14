@@ -166,3 +166,6 @@ Gereklilikler yüklenir;
 
 ## Veri Tabanı Şeması
  ![Image description](databaseerd.png)
+ 
+ 
+ * Böyle bir eğitim imkanı sağladıkları için öncelikle Yemeksepeti ve Patika ekibine,bu eğitim sürecinin çok verimli ve bir o kadar da eğlenceli geçmesini sağlayan İbrahim Hocamıza ve ekip arkaşlarıma çok teşekkür ederim.

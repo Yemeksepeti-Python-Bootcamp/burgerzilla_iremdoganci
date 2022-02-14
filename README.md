@@ -18,7 +18,7 @@ Proje klonlanır;
 
 Proje dizinine gidilir; 
 
-*`cd burgerzilla_iremdoganci`
+* `cd burgerzilla_iremdoganci`
 
 Virtual environment oluşturulur 
 

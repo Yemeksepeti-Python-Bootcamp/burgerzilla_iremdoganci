@@ -32,9 +32,9 @@ Gereklilikler yüklenir;
 
 * `pip install -r requirements.txt`
 
- Ön tanımlı veriler oluşturulur; 
+Ön tanımlı veriler oluşturulur; 
  
-*`flask defaultdata`
+* `flask defaultdata`
 
 * `flask run`
 

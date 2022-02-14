@@ -73,7 +73,7 @@
 		{
 			"name": "add_product_to_menu",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": []
 			},
 			"response": []
@@ -81,7 +81,7 @@
 		{
 			"name": "delete_product",
 			"request": {
-				"method": "GET",
+				"method": "DELETE",
 				"header": []
 			},
 			"response": []
@@ -89,7 +89,7 @@
 		{
 			"name": "update_menu",
 			"request": {
-				"method": "GET",
+				"method": "PUT",
 				"header": []
 			},
 			"response": []
@@ -105,7 +105,7 @@
 		{
 			"name": "create_order",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": []
 			},
 			"response": []
@@ -121,7 +121,7 @@
 		{
 			"name": "update_order",
 			"request": {
-				"method": "GET",
+				"method": "PUT",
 				"header": []
 			},
 			"response": []
@@ -129,7 +129,7 @@
 		{
 			"name": "cancel_order",
 			"request": {
-				"method": "GET",
+				"method": "DELETE",
 				"header": []
 			},
 			"response": []

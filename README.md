@@ -13,17 +13,29 @@ yapmayı sağlayan bir REST-API mikro servisidir.
 
 ### Bilgisayarda Çalıştırmak İçin
 Proje klonlanır; 
+
 * `git clone https://github.com/Yemeksepeti-Python-Bootcamp/burgerzilla_iremdoganci.git`
+
 Proje dizinine gidilir; 
+
 *`cd burgerzilla_iremdoganci`
+
 Virtual environment oluşturulur 
+
 * `python -m venv env`
+
 Virtual environment aktif hale getiririlr; 
+
 * `. env/bin/activate` (for MacOs) / `env\Scripts\activate` (for Windows)
+
 Gereklilikler yüklenir; 
+
 * `pip install -r requirements.txt`
+
  Ön tanımlı veriler oluşturulur; 
+ 
 *`flask defaultdata`
+
 * `flask run`
 
 ### Dockerda Çalıştırmak İçin

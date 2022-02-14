@@ -15,6 +15,7 @@ yapmayı sağlayan bir REST-API mikro servisidir.
 * `git clone https://github.com/Yemeksepeti-Python-Bootcamp/burgerzilla_iremdoganci.git`
 * `cd burgerzilla_iremdoganci`
 * `python -m venv env`
+* `. env/bin/activate`
 * `pip install -r requirements.txt`
 * `flask defaultdata`
 * `flask run`
